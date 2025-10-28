@@ -1,9 +1,12 @@
+# test-llm-models
 
-Add
-dont like tbl_a <- tbl_a |> ... - ie overwrite object, not r style?!
-like tbl_a <- line break tbl_b
 
-GitHub playground tool rec:
+### Add to sys prompt:
+- dont like tbl_a <- tbl_a |> ... - ie overwrite object, not r style?!
+- like tbl_a <- line break tbl_b
+
+
+### GitHub playground tool rec:
 
 Provide clear, practical R code solutions for an intermediate/advanced R user who may need reminders, typo corrections, refactoring advice, or style tips. Keep responses succinct, direct, and to the point. Follow these guidelines:  
 
