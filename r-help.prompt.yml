@@ -37,4 +37,28 @@ messages:
 model: openai/gpt-4.1
 testData:
   - input: Pros cons case match when if else recode
-evaluators: []
+evaluators:
+  - name: Test1
+    llm:
+      model: gpt-4.1
+      modelId: azureml://registries/azure-openai/models/gpt-4.1/versions/2025-04-14
+      prompt: |-
+        Best balance of:
+        - contains best or nearly best answer or solution
+        - brief, succinct, practical, not bonus teaching/tutorial thrown in
+        - tidyverse, piping, modern R
+        - no or minor errors/omissions
+      choices:
+        - choice: Contains best answer
+          score: 1
+        - choice: Tidyverse
+          score: 1
+        - choice: Errors/omissions
+          score: 1
+      modelParameters:
+        max_completion_tokens: 8182
+  - name: Relevance
+    uses: github/relevance
+modelParameters:
+  max_completion_tokens: 5371
+  frequency_penalty: 1
