@@ -35,3 +35,6 @@ messages:
   - role: user
     content: '{{input}}'
 model: openai/gpt-4.1
+testData:
+  - input: Pros cons case match when if else recode
+evaluators: []
