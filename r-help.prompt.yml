@@ -34,4 +34,4 @@ messages:
       be used and why not optimal.
   - role: user
     content: '{{input}}'
-model: openai/gpt-5
+model: openai/gpt-4.1
