@@ -57,6 +57,9 @@ evaluators:
           score: 1
       modelParameters:
         max_completion_tokens: 8182
+      systemPrompt: >-
+        Must mention if_else. If ifelse is mentioned, must specify that if_else
+        is better. Must mention recode is deprecated in favour of case_match.
   - name: Relevance
     uses: github/relevance
 modelParameters:
